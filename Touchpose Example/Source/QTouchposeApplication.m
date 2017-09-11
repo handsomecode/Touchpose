@@ -101,15 +101,15 @@ touchEndAnimationDuration:(NSTimeInterval)touchEndAnimationDuration
     }
     else
     {
-        const CGFloat kFingerRadius = 22.0f;
+        const CGFloat kFingerRadius = 16.0f;
         
         if ((self = [super initWithFrame:CGRectMake(point.x-kFingerRadius, point.y-kFingerRadius, 2*kFingerRadius, 2*kFingerRadius)]))
         {
             self.opaque = NO;
-            self.layer.borderColor = [color colorWithAlphaComponent:0.6f].CGColor;
+            self.layer.borderColor = [color colorWithAlphaComponent:0.9f].CGColor;
             self.layer.cornerRadius = kFingerRadius;
             self.layer.borderWidth = 2.0f;
-            self.layer.backgroundColor = [color colorWithAlphaComponent:0.4f].CGColor;
+            self.layer.backgroundColor = [color colorWithAlphaComponent:0.7f].CGColor;
 
             _touchEndAnimationDuration = touchEndAnimationDuration;
             _touchEndTransform = touchEndTransform;
@@ -187,7 +187,7 @@ static void UIWindow_new_didAddSubview(UIWindow *window, SEL _cmd, UIView *view)
         [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(keyboardDidHideNotification:) name:UIKeyboardDidHideNotification object:nil];        
         _touchDictionary = CFDictionaryCreateMutable(NULL, 10, NULL, NULL);
         _alwaysShowTouches = NO;
-        _touchColor = [UIColor colorWithRed:0.251f green:0.424f blue:0.502f alpha:1.0f];
+        _touchColor = [UIColor colorWithRed:0.87f green:0.89f blue:0.85f alpha:1.0f];
         _touchEndAnimationDuration = 0.5f;
         _touchEndTransform = CATransform3DMakeScale(1.5, 1.5, 1);
         
