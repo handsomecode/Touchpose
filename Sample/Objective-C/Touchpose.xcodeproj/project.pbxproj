@@ -144,11 +144,6 @@
 				CLASSPREFIX = Q;
 				LastUpgradeCheck = 0430;
 				ORGANIZATIONNAME = "Reaction Software Inc.";
-				TargetAttributes = {
-					5FFDBED314EEEAAB002CBB71 = {
-						DevelopmentTeam = 8NE24U7U9C;
-					};
-				};
 			};
 			buildConfigurationList = 5FFDBECE14EEEAAB002CBB71 /* Build configuration list for PBXProject "Touchpose" */;
 			compatibilityVersion = "Xcode 3.2";
@@ -257,6 +252,7 @@
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEVELOPMENT_TEAM = "";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Source/Touchpose-Prefix.pch";
 				INFOPLIST_FILE = "Source/Touchpose-Info.plist";
@@ -274,6 +270,7 @@
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEVELOPMENT_TEAM = "";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Source/Touchpose-Prefix.pch";
 				INFOPLIST_FILE = "Source/Touchpose-Info.plist";

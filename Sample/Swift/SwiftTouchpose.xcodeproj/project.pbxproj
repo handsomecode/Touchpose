@@ -1,0 +1,344 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		9A8AA8B41F66C1FD00EAFA74 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A8AA8B31F66C1FD00EAFA74 /* AppDelegate.swift */; };
+		9A8AA8B61F66C1FD00EAFA74 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A8AA8B51F66C1FD00EAFA74 /* ViewController.swift */; };
+		9A8AA8B91F66C1FD00EAFA74 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9A8AA8B71F66C1FD00EAFA74 /* Main.storyboard */; };
+		9A8AA8BB1F66C1FD00EAFA74 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9A8AA8BA1F66C1FD00EAFA74 /* Assets.xcassets */; };
+		9A8AA8BE1F66C1FD00EAFA74 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9A8AA8BC1F66C1FD00EAFA74 /* LaunchScreen.storyboard */; };
+		9A8AA8C81F66C2FE00EAFA74 /* QTouchposeApplication.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A8AA8C61F66C2EA00EAFA74 /* QTouchposeApplication.m */; };
+		9A8AA8CA1F66C37C00EAFA74 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A8AA8C91F66C37600EAFA74 /* main.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		9A8AA8B01F66C1FD00EAFA74 /* SwiftTouchpose.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftTouchpose.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		9A8AA8B31F66C1FD00EAFA74 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		9A8AA8B51F66C1FD00EAFA74 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		9A8AA8B81F66C1FD00EAFA74 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		9A8AA8BA1F66C1FD00EAFA74 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		9A8AA8BD1F66C1FD00EAFA74 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		9A8AA8BF1F66C1FD00EAFA74 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9A8AA8C51F66C2E900EAFA74 /* Swift-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Swift-Bridging-Header.h"; sourceTree = "<group>"; };
+		9A8AA8C61F66C2EA00EAFA74 /* QTouchposeApplication.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = QTouchposeApplication.m; sourceTree = "<group>"; };
+		9A8AA8C71F66C2EA00EAFA74 /* QTouchposeApplication.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = QTouchposeApplication.h; sourceTree = "<group>"; };
+		9A8AA8C91F66C37600EAFA74 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		9A8AA8AD1F66C1FD00EAFA74 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		9A8AA8A71F66C1FD00EAFA74 = {
+			isa = PBXGroup;
+			children = (
+				9A8AA8B21F66C1FD00EAFA74 /* Swift */,
+				9A8AA8B11F66C1FD00EAFA74 /* Products */,
+				9A8AA8C51F66C2E900EAFA74 /* Swift-Bridging-Header.h */,
+			);
+			sourceTree = "<group>";
+		};
+		9A8AA8B11F66C1FD00EAFA74 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				9A8AA8B01F66C1FD00EAFA74 /* SwiftTouchpose.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		9A8AA8B21F66C1FD00EAFA74 /* Swift */ = {
+			isa = PBXGroup;
+			children = (
+				9A8AA8C91F66C37600EAFA74 /* main.swift */,
+				9A8AA8C71F66C2EA00EAFA74 /* QTouchposeApplication.h */,
+				9A8AA8C61F66C2EA00EAFA74 /* QTouchposeApplication.m */,
+				9A8AA8B31F66C1FD00EAFA74 /* AppDelegate.swift */,
+				9A8AA8B51F66C1FD00EAFA74 /* ViewController.swift */,
+				9A8AA8B71F66C1FD00EAFA74 /* Main.storyboard */,
+				9A8AA8BA1F66C1FD00EAFA74 /* Assets.xcassets */,
+				9A8AA8BC1F66C1FD00EAFA74 /* LaunchScreen.storyboard */,
+				9A8AA8BF1F66C1FD00EAFA74 /* Info.plist */,
+			);
+			path = Swift;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		9A8AA8AF1F66C1FD00EAFA74 /* SwiftTouchpose */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9A8AA8C21F66C1FD00EAFA74 /* Build configuration list for PBXNativeTarget "SwiftTouchpose" */;
+			buildPhases = (
+				9A8AA8AC1F66C1FD00EAFA74 /* Sources */,
+				9A8AA8AD1F66C1FD00EAFA74 /* Frameworks */,
+				9A8AA8AE1F66C1FD00EAFA74 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SwiftTouchpose;
+			productName = Swift;
+			productReference = 9A8AA8B01F66C1FD00EAFA74 /* SwiftTouchpose.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		9A8AA8A81F66C1FD00EAFA74 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0900;
+				LastUpgradeCheck = 0900;
+				ORGANIZATIONNAME = Handsome;
+				TargetAttributes = {
+					9A8AA8AF1F66C1FD00EAFA74 = {
+						CreatedOnToolsVersion = 9.0;
+						LastSwiftMigration = 0900;
+					};
+				};
+			};
+			buildConfigurationList = 9A8AA8AB1F66C1FD00EAFA74 /* Build configuration list for PBXProject "SwiftTouchpose" */;
+			compatibilityVersion = "Xcode 8.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 9A8AA8A71F66C1FD00EAFA74;
+			productRefGroup = 9A8AA8B11F66C1FD00EAFA74 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				9A8AA8AF1F66C1FD00EAFA74 /* SwiftTouchpose */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		9A8AA8AE1F66C1FD00EAFA74 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9A8AA8BE1F66C1FD00EAFA74 /* LaunchScreen.storyboard in Resources */,
+				9A8AA8BB1F66C1FD00EAFA74 /* Assets.xcassets in Resources */,
+				9A8AA8B91F66C1FD00EAFA74 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		9A8AA8AC1F66C1FD00EAFA74 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9A8AA8B61F66C1FD00EAFA74 /* ViewController.swift in Sources */,
+				9A8AA8B41F66C1FD00EAFA74 /* AppDelegate.swift in Sources */,
+				9A8AA8CA1F66C37C00EAFA74 /* main.swift in Sources */,
+				9A8AA8C81F66C2FE00EAFA74 /* QTouchposeApplication.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		9A8AA8B71F66C1FD00EAFA74 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				9A8AA8B81F66C1FD00EAFA74 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		9A8AA8BC1F66C1FD00EAFA74 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				9A8AA8BD1F66C1FD00EAFA74 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		9A8AA8C01F66C1FD00EAFA74 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		9A8AA8C11F66C1FD00EAFA74 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		9A8AA8C31F66C1FD00EAFA74 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				DEVELOPMENT_TEAM = "";
+				INFOPLIST_FILE = Swift/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = is.handsome.swift.SwiftTouchpose;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Swift-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		9A8AA8C41F66C1FD00EAFA74 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				DEVELOPMENT_TEAM = "";
+				INFOPLIST_FILE = Swift/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = is.handsome.swift.SwiftTouchpose;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Swift-Bridging-Header.h";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		9A8AA8AB1F66C1FD00EAFA74 /* Build configuration list for PBXProject "SwiftTouchpose" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9A8AA8C01F66C1FD00EAFA74 /* Debug */,
+				9A8AA8C11F66C1FD00EAFA74 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9A8AA8C21F66C1FD00EAFA74 /* Build configuration list for PBXNativeTarget "SwiftTouchpose" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9A8AA8C31F66C1FD00EAFA74 /* Debug */,
+				9A8AA8C41F66C1FD00EAFA74 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 9A8AA8A81F66C1FD00EAFA74 /* Project object */;
+}
