@@ -47,13 +47,17 @@ want to always show touch events, set the `alwaysShowTouches` property
 of `QTouchposeApplication` to `YES`.
 
 ## Swift
-(tested on Xcode 6.3.1)
+(tested on Xcode 9 beta 3)
 
 Remove `@UIApplicationMain` from your AppDelegate file.
 
-After adding Touchpose to your project you will need a main.swift file that has 1, yes 1, line in it:
+After adding Touchpose to your project you will need a main.swift file that has the line in it:
 
-        UIApplicationMain(Process.argc, Process.unsafeArgv, NSStringFromClass(QTouchposeApplication.self), NSStringFromClass(YOUR_APP_Delegate.self))
+```
+UIApplicationMain(CommandLine.argc, UnsafeMutableRawPointer(CommandLine.unsafeArgv)
+    .bindMemory(to: UnsafeMutablePointer.self, capacity: Int(CommandLine.argc)),
+        NSStringFromClass(QTouchposeApplication.self), NSStringFromClass(YOUR_APP_Delegate.self))
+```
 
 Or change the name of the sampleMain.swift file and add it to your project
 

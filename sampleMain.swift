@@ -7,4 +7,6 @@
 //
 // rename this file to main.swift in your project
 
-UIApplicationMain(Process.argc, Process.unsafeArgv, NSStringFromClass(QTouchposeApplication.self), NSStringFromClass(AppDelegate.self))
+UIApplicationMain(CommandLine.argc, UnsafeMutableRawPointer(CommandLine.unsafeArgv)
+    .bindMemory(to: UnsafeMutablePointer.self, capacity: Int(CommandLine.argc)), NSStringFromClass(QTouchposeApplication.self), NSStringFromClass(AppDelegate.self))
+
