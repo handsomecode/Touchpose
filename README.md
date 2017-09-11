@@ -1,6 +1,6 @@
 # Touchposé
 
-![Touchposé with four fingers on the screen.](http://public.toddreed.name.s3.amazonaws.com/images/TouchposeScreenshot.png)
+![Touchposé with four fingers on the screen.](./Images/touchpose_screenshot.png)
 
 Touchposé is a set of classes for iOS that renders screen touches when
 a device is connected to a mirrored display. Touchposé adds a
@@ -65,7 +65,7 @@ Or change the name of the sampleMain.swift file and add it to your project
 
 Instead of the default "bubble" indicator, you can supply your own image after you instantiate `QTouchposeApplication`.
 
-For example, you can use the following [hand cursor image](./QTouchposeFinger.png) to generate a custom cursor.
+For example, you can use the following [hand cursor image](./Images/touchpose_finger.png) to generate a custom cursor.
 
 
 ```
@@ -77,7 +77,7 @@ The `customTouchPoint` property is the desired touch point of your image, relati
 
 After adding these two properties, your cursor will now be represented by the custom image.
 
-<img src="touchpose_hand_screenshot.png" width="115px" height="222px" />
+<img src="Images/touchpose_hand_screenshot.png" width="115px" height="222px" />
 
 
 ## Known Issues
