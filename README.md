@@ -10,7 +10,7 @@ tool when demoing an app with a projector (with an iPad 2 or iPhone
 4S).
 
 To use Touchposé in your own app, copy `QTouchposeApplication.m` and
-`QTouchposeApplication.h` from the example project to your project.
+`QTouchposeApplication.h` from **Source** folder to your project.
 
 Touchposé should work for most apps (but read the caveat below). It’s
 implemented by a single public class, `QTouchposeApplication`, and
@@ -22,36 +22,22 @@ achieved by intercepting calls to `-didAddSubview:` and
 `-becomeKeyWindow` using _method swizzling_. Method swizzling is
 supported by the Objective-C runtime, but it’s usually considered a
 dangerous practice, especially when done on classes you don’t
-own. Furthermore, it only works if you’re the only one swizzling—if
+own. Furthermore, it only works if you’re the only one swizzling — if
 some other class is also swizzling methods on the same class, things
-may go amok. My recommendation is to only use this code in private
+may go amok. The recommendation is to only use this code in private
 builds when you want to demo your app to an audience on a projector.
 
 To use Touchposé with an app, indicate that `QTouchposeApplication`
 should be used instead of `UIApplication`. This is done by specifying
-the application class in UIApplicationMain:
+the application class in UIApplicationMain.
 
-        int main(int argc, char *argv[])
-        {
-            @autoreleasepool
-            {
-                return UIApplicationMain(argc, argv,
-                                         NSStringFromClass([QTouchposeApplication class]),
-                                         NSStringFromClass([QAppDelegate class]));
-            }
-        }
+### Swift
 
-That’s it; no other steps are needed. By default, touch events are
-only displayed when actually connected to an external device. If you
-want to always show touch events, set the `alwaysShowTouches` property
-of `QTouchposeApplication` to `YES`.
-
-## Swift
 (tested on Xcode 9 beta 3)
 
 Remove `@UIApplicationMain` from your AppDelegate file.
 
-After adding Touchpose to your project you will need a main.swift file that has the line in it:
+After adding Touchpose to your project you will need a main.swift file that has one line in it:
 
 ```
 UIApplicationMain(CommandLine.argc, UnsafeMutableRawPointer(CommandLine.unsafeArgv)
@@ -59,7 +45,33 @@ UIApplicationMain(CommandLine.argc, UnsafeMutableRawPointer(CommandLine.unsafeAr
         NSStringFromClass(QTouchposeApplication.self), NSStringFromClass(YOUR_APP_Delegate.self))
 ```
 
-Or change the name of the sampleMain.swift file and add it to your project
+### Objective-C
+
+Your `main.m` file should contain the following method:
+
+```
+int main(int argc, char *argv[]) {
+    @autoreleasepool {
+        return UIApplicationMain(argc, argv,
+             NSStringFromClass([QTouchposeApplication class]),
+             NSStringFromClass([QAppDelegate class]));
+    }
+}
+```
+
+That’s it; no other steps are needed. By default, touch events are
+only displayed when actually connected to an external device. If you
+want to always show touch events, set the `alwaysShowTouches` property
+of `QTouchposeApplication` to `true`.
+
+Also, you has possibility to set radius, color, or animation of the pointer. E.g. in `func application(_ :didFinishLaunchingWithOptions) -> Bool`
+
+```Swift
+let touchposeApplication: QTouchposeApplication = application as! QTouchposeApplication
+touchposeApplication.alwaysShowTouches = true
+touchposeApplication.touchColor = UIColor.red
+touchposeApplication.touchRadius = 30.0
+```
 
 ## Custom Cursor Indicators
 
@@ -68,12 +80,12 @@ Instead of the default "bubble" indicator, you can supply your own image after y
 For example, you can use the following [hand cursor image](https://user-images.githubusercontent.com/2081318/30328272-a6426cac-97f0-11e7-92b7-8a618e074e5c.png) to generate a custom cursor.
 
 
-```
-touchposeApplication.customTouchImage = [UIImage imageNamed:@"<my_custom_image.png>"];
-touchposeApplication.customTouchPoint = CGPointMake(214, 148);
+```Swift
+touchposeApplication.customTouchImage = UIImage(named: "my_custom_image")
+touchposeApplication.customTouchPoint = CGPoint(x: 214, y: 148)
 ```
 
-The `customTouchPoint` property is the desired touch point of your image, relative to the image itself (upper-left corner = 0,0). In this case, the point *214,148* represents the tip of the index finger in the image.
+The `customTouchPoint` property is the desired touch point of your image, relative to the image itself (upper-left corner = 0,0). In this case, the point *214, 148* represents the tip of the index finger in the image.
 
 After adding these two properties, your cursor will now be represented by the custom image.
 
