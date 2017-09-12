@@ -7,16 +7,18 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		9A8577C21F68673E004E6401 /* QTouchposeApplication.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A8577BE1F6862C6004E6401 /* QTouchposeApplication.m */; };
 		9A8AA8B41F66C1FD00EAFA74 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A8AA8B31F66C1FD00EAFA74 /* AppDelegate.swift */; };
 		9A8AA8B61F66C1FD00EAFA74 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A8AA8B51F66C1FD00EAFA74 /* ViewController.swift */; };
 		9A8AA8B91F66C1FD00EAFA74 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9A8AA8B71F66C1FD00EAFA74 /* Main.storyboard */; };
 		9A8AA8BB1F66C1FD00EAFA74 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9A8AA8BA1F66C1FD00EAFA74 /* Assets.xcassets */; };
 		9A8AA8BE1F66C1FD00EAFA74 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9A8AA8BC1F66C1FD00EAFA74 /* LaunchScreen.storyboard */; };
-		9A8AA8C81F66C2FE00EAFA74 /* QTouchposeApplication.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A8AA8C61F66C2EA00EAFA74 /* QTouchposeApplication.m */; };
 		9A8AA8CA1F66C37C00EAFA74 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A8AA8C91F66C37600EAFA74 /* main.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		9A8577BD1F6862C6004E6401 /* QTouchposeApplication.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = QTouchposeApplication.h; path = ../../Source/QTouchposeApplication.h; sourceTree = "<group>"; };
+		9A8577BE1F6862C6004E6401 /* QTouchposeApplication.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = QTouchposeApplication.m; path = ../../Source/QTouchposeApplication.m; sourceTree = "<group>"; };
 		9A8AA8B01F66C1FD00EAFA74 /* SwiftTouchpose.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftTouchpose.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9A8AA8B31F66C1FD00EAFA74 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		9A8AA8B51F66C1FD00EAFA74 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -25,8 +27,6 @@
 		9A8AA8BD1F66C1FD00EAFA74 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		9A8AA8BF1F66C1FD00EAFA74 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9A8AA8C51F66C2E900EAFA74 /* Swift-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Swift-Bridging-Header.h"; sourceTree = "<group>"; };
-		9A8AA8C61F66C2EA00EAFA74 /* QTouchposeApplication.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = QTouchposeApplication.m; sourceTree = "<group>"; };
-		9A8AA8C71F66C2EA00EAFA74 /* QTouchposeApplication.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = QTouchposeApplication.h; sourceTree = "<group>"; };
 		9A8AA8C91F66C37600EAFA74 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -44,6 +44,8 @@
 		9A8AA8A71F66C1FD00EAFA74 = {
 			isa = PBXGroup;
 			children = (
+				9A8577BD1F6862C6004E6401 /* QTouchposeApplication.h */,
+				9A8577BE1F6862C6004E6401 /* QTouchposeApplication.m */,
 				9A8AA8B21F66C1FD00EAFA74 /* Swift */,
 				9A8AA8B11F66C1FD00EAFA74 /* Products */,
 				9A8AA8C51F66C2E900EAFA74 /* Swift-Bridging-Header.h */,
@@ -62,8 +64,6 @@
 			isa = PBXGroup;
 			children = (
 				9A8AA8C91F66C37600EAFA74 /* main.swift */,
-				9A8AA8C71F66C2EA00EAFA74 /* QTouchposeApplication.h */,
-				9A8AA8C61F66C2EA00EAFA74 /* QTouchposeApplication.m */,
 				9A8AA8B31F66C1FD00EAFA74 /* AppDelegate.swift */,
 				9A8AA8B51F66C1FD00EAFA74 /* ViewController.swift */,
 				9A8AA8B71F66C1FD00EAFA74 /* Main.storyboard */,
@@ -147,9 +147,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				9A8AA8B61F66C1FD00EAFA74 /* ViewController.swift in Sources */,
+				9A8577C21F68673E004E6401 /* QTouchposeApplication.m in Sources */,
 				9A8AA8B41F66C1FD00EAFA74 /* AppDelegate.swift in Sources */,
 				9A8AA8CA1F66C37C00EAFA74 /* main.swift in Sources */,
-				9A8AA8C81F66C2FE00EAFA74 /* QTouchposeApplication.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -16,7 +16,7 @@
 		5FFDBEE514EEEAAB002CBB71 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 5FFDBEE414EEEAAB002CBB71 /* main.m */; };
 		5FFDBEE914EEEAAB002CBB71 /* QAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 5FFDBEE814EEEAAB002CBB71 /* QAppDelegate.m */; };
 		5FFDBEEC14EEEAAB002CBB71 /* QViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5FFDBEEB14EEEAAB002CBB71 /* QViewController.m */; };
-		5FFDBEFF14EEF737002CBB71 /* QTouchposeApplication.m in Sources */ = {isa = PBXBuildFile; fileRef = 5FFDBEFE14EEF737002CBB71 /* QTouchposeApplication.m */; };
+		9A8577C11F68643B004E6401 /* QTouchposeApplication.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A8577C01F6862EF004E6401 /* QTouchposeApplication.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -34,8 +34,8 @@
 		5FFDBEE814EEEAAB002CBB71 /* QAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = QAppDelegate.m; sourceTree = "<group>"; };
 		5FFDBEEA14EEEAAB002CBB71 /* QViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = QViewController.h; sourceTree = "<group>"; };
 		5FFDBEEB14EEEAAB002CBB71 /* QViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = QViewController.m; sourceTree = "<group>"; };
-		5FFDBEFD14EEF737002CBB71 /* QTouchposeApplication.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QTouchposeApplication.h; sourceTree = "<group>"; };
-		5FFDBEFE14EEF737002CBB71 /* QTouchposeApplication.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QTouchposeApplication.m; sourceTree = "<group>"; };
+		9A8577BF1F6862EF004E6401 /* QTouchposeApplication.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = QTouchposeApplication.h; path = ../../Source/QTouchposeApplication.h; sourceTree = "<group>"; };
+		9A8577C01F6862EF004E6401 /* QTouchposeApplication.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = QTouchposeApplication.m; path = ../../Source/QTouchposeApplication.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +56,8 @@
 		5FFDBEC914EEEAAB002CBB71 = {
 			isa = PBXGroup;
 			children = (
+				9A8577BF1F6862EF004E6401 /* QTouchposeApplication.h */,
+				9A8577C01F6862EF004E6401 /* QTouchposeApplication.m */,
 				5FFDBF1F14F06721002CBB71 /* Resources */,
 				5FFDBEDE14EEEAAB002CBB71 /* Source */,
 				5FFDBED714EEEAAB002CBB71 /* Frameworks */,
@@ -87,8 +89,6 @@
 			children = (
 				5FFDBEE714EEEAAB002CBB71 /* QAppDelegate.h */,
 				5FFDBEE814EEEAAB002CBB71 /* QAppDelegate.m */,
-				5FFDBEFD14EEF737002CBB71 /* QTouchposeApplication.h */,
-				5FFDBEFE14EEF737002CBB71 /* QTouchposeApplication.m */,
 				5FFDBEEA14EEEAAB002CBB71 /* QViewController.h */,
 				5FFDBEEB14EEEAAB002CBB71 /* QViewController.m */,
 				5FFDBEDF14EEEAAB002CBB71 /* Supporting Files */,
@@ -180,9 +180,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				5FFDBEE514EEEAAB002CBB71 /* main.m in Sources */,
+				9A8577C11F68643B004E6401 /* QTouchposeApplication.m in Sources */,
 				5FFDBEE914EEEAAB002CBB71 /* QAppDelegate.m in Sources */,
 				5FFDBEEC14EEEAAB002CBB71 /* QViewController.m in Sources */,
-				5FFDBEFF14EEF737002CBB71 /* QTouchposeApplication.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -256,7 +256,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Source/Touchpose-Prefix.pch";
 				INFOPLIST_FILE = "Source/Touchpose-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
 				WRAPPER_EXTENSION = app;
@@ -274,7 +274,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Source/Touchpose-Prefix.pch";
 				INFOPLIST_FILE = "Source/Touchpose-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
 				WRAPPER_EXTENSION = app;

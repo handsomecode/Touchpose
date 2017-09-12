@@ -40,6 +40,7 @@
 
 - (id)initWithPoint:(CGPoint)point
               color:(UIColor *)color
+            touchRadius:(CGFloat)touchRadius
 touchEndAnimationDuration:(NSTimeInterval)touchEndAnimationDuration
   touchEndTransform:(CATransform3D)touchEndTransform
    customTouchImage:(UIImage *)customTouchImage
@@ -76,6 +77,7 @@ touchEndAnimationDuration:(NSTimeInterval)touchEndAnimationDuration
 
 - (id)initWithPoint:(CGPoint)point
               color:(UIColor *)color
+        touchRadius:(CGFloat)touchRadius
 touchEndAnimationDuration:(NSTimeInterval)touchEndAnimationDuration
   touchEndTransform:(CATransform3D)touchEndTransform
    customTouchImage:(UIImage *)customTouchImage
@@ -101,13 +103,11 @@ touchEndAnimationDuration:(NSTimeInterval)touchEndAnimationDuration
     }
     else
     {
-        const CGFloat kFingerRadius = 16.0f;
-        
-        if ((self = [super initWithFrame:CGRectMake(point.x-kFingerRadius, point.y-kFingerRadius, 2*kFingerRadius, 2*kFingerRadius)]))
+        if ((self = [super initWithFrame:CGRectMake(point.x-touchRadius, point.y-touchRadius, 2*touchRadius, 2*touchRadius)]))
         {
             self.opaque = NO;
             self.layer.borderColor = [color colorWithAlphaComponent:0.9f].CGColor;
-            self.layer.cornerRadius = kFingerRadius;
+            self.layer.cornerRadius = touchRadius;
             self.layer.borderWidth = 2.0f;
             self.layer.backgroundColor = [color colorWithAlphaComponent:0.7f].CGColor;
 
@@ -188,6 +188,7 @@ static void UIWindow_new_didAddSubview(UIWindow *window, SEL _cmd, UIView *view)
         _touchDictionary = CFDictionaryCreateMutable(NULL, 10, NULL, NULL);
         _alwaysShowTouches = NO;
         _touchColor = [UIColor colorWithRed:0.87f green:0.89f blue:0.85f alpha:1.0f];
+        _touchRadius = 16.0f;
         _touchEndAnimationDuration = 0.5f;
         _touchEndTransform = CATransform3DMakeScale(1.5, 1.5, 1);
         
@@ -268,7 +269,7 @@ static void UIWindow_new_didAddSubview(UIWindow *window, SEL _cmd, UIView *view)
             {
                 fingerView = [[QTouchposeFingerView alloc] initWithPoint:point
                                                                    color:_touchColor
-                                               touchEndAnimationDuration:_touchEndAnimationDuration
+                                                             touchRadius:_touchRadius  touchEndAnimationDuration:_touchEndAnimationDuration
                                                        touchEndTransform:_touchEndTransform
                                                         customTouchImage:self.customTouchImage
                                                         customTouchPoint:self.customTouchPoint];
