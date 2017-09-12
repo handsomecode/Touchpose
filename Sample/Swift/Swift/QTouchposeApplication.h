@@ -22,6 +22,7 @@
 @property (nonatomic) BOOL showTouchesWhenKeyboardShown;
 @property (nonatomic) CGFloat touchEndAnimationDuration;
 @property (nonatomic) CATransform3D touchEndTransform;
+@property (nonatomic) CGFloat touchRadius;
 @property (nonatomic, strong) UIColor *touchColor;
 
 @property (nonatomic) UIImage *customTouchImage;
