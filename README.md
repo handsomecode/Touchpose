@@ -39,7 +39,7 @@ Remove `@UIApplicationMain` from your AppDelegate file.
 
 After adding Touchpose to your project you will need a main.swift file that has one line in it:
 
-```
+```Swift
 UIApplicationMain(CommandLine.argc, UnsafeMutableRawPointer(CommandLine.unsafeArgv)
     .bindMemory(to: UnsafeMutablePointer.self, capacity: Int(CommandLine.argc)),
         NSStringFromClass(QTouchposeApplication.self), NSStringFromClass(YOUR_APP_Delegate.self))
@@ -49,7 +49,7 @@ UIApplicationMain(CommandLine.argc, UnsafeMutableRawPointer(CommandLine.unsafeAr
 
 Your `main.m` file should contain the following method:
 
-```
+```Objective-C
 int main(int argc, char *argv[]) {
     @autoreleasepool {
         return UIApplicationMain(argc, argv,
